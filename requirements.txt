@@ -1,0 +1,105 @@
+# ================================================================
+# SteadyPrice Enterprise - Complete Requirements
+# Week 6 "The Price is Right" Capstone Project
+# ================================================================
+
+# ==================== Core Framework ====================
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-multipart==0.0.6
+
+# ==================== Database & Storage ====================
+sqlalchemy==2.0.23
+alembic==1.13.1
+psycopg2-binary==2.9.9
+redis==5.0.1
+aiofiles==23.2.1
+
+# ==================== Authentication & Security ====================
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+
+# ==================== Machine Learning Core ====================
+scikit-learn==1.3.2
+torch==2.1.1
+torchvision==0.16.1
+transformers==4.36.0
+xgboost==2.0.3
+numpy==1.24.4
+pandas==2.1.4
+
+# ==================== AI/LLM Integration ====================
+datasets==3.6.0
+huggingface-hub==0.20.2
+tokenizers==0.15.1
+accelerate==0.24.1
+safetensors==0.4.0
+
+# ==================== Data Processing & Analysis ====================
+tqdm==4.66.1
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.17.0
+jupyter==1.0.0
+
+# ==================== API & HTTP ====================
+httpx==0.25.2
+requests==2.31.0
+aiohttp==3.9.1
+
+# ==================== Logging & Monitoring ====================
+structlog==23.2.0
+prometheus-client==0.19.0
+psutil==5.9.6
+
+# ==================== Development Tools ====================
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0
+isort==5.12.0
+mypy==1.7.1
+flake8==6.1.0
+pre-commit==3.5.0
+
+# ==================== Production Deployment ====================
+gunicorn==21.2.0
+supervisor==4.2.5
+nginx==1.0.0
+
+# ==================== Optional: Advanced AI Features ====================
+# OpenAI Integration (Optional)
+# openai==1.3.8
+
+# Anthropic Integration (Optional)  
+# anthropic==0.7.8
+
+# Additional ML Libraries (Optional)
+# lightgbm==4.1.0
+# catboost==1.2.2
+# optuna==3.4.0
+
+# ==================== System Requirements ====================
+# Python 3.8+
+# 8GB+ RAM recommended
+# 10GB+ disk space for models
+
+# ==================== Installation Commands ====================
+# Full Installation:
+# pip install -r requirements.txt
+
+# Core ML Only:
+# pip install fastapi uvicorn pydantic scikit-learn torch transformers xgboost numpy pandas
+
+# Production Only:
+# pip install fastapi uvicorn gunicorn psycopg2-binary redis python-jose passlib
+
+# ==================== Quick Start ====================
+# 1. Create virtual environment: python -m venv venv
+# 2. Activate: venv\Scripts\activate (Windows) or source venv/bin/activate (Unix)
+# 3. Install: pip install -r requirements.txt
+# 4. Configure: cp .env.example .env
+# 5. Run: python run.py
