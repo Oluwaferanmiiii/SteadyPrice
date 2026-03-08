@@ -1,0 +1,36 @@
+{
+  "validation_summary": {
+    "start_time": "2026-03-08T11:50:13.829095",
+    "total_services": 5,
+    "successful": 0,
+    "failed": 5,
+    "skipped": 0,
+    "success_rate": 0.0,
+    "end_time": "2026-03-08T11:50:13.829535",
+    "duration_seconds": 0.000509
+  },
+  "detailed_results": {
+    "anthropic": {
+      "status": "error",
+      "reason": "ANTHROPIC_API_KEY not found in environment variables"
+    },
+    "openai": {
+      "status": "error",
+      "reason": "OPENAI_API_KEY not found in environment variables"
+    },
+    "retailers": {
+      "amazon": {
+        "status": "missing",
+        "reason": "Amazon API keys not found"
+      },
+      "bestbuy": {
+        "status": "missing",
+        "reason": "Best Buy API keys not found"
+      },
+      "walmart": {
+        "status": "missing",
+        "reason": "Walmart API key not found"
+      }
+    }
+  }
+}
